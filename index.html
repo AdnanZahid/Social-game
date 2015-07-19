@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Social game</title>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+	<script>
+		var socket = io.connect('/');
+
+		socket.on("connect", function(socket) {
+			
+		    document.write("Connected!");
+		});
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
